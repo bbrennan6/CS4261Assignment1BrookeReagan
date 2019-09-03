@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -20,6 +20,7 @@
 		3D28DDD5231DFF3D0075D558 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3D28DDD2231DFF3C0075D558 /* GoogleService-Info.plist */; };
 		C0FEE34D52ECFFC893B8128A /* Pods_CS4261Assignment1.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 122736EE5D1004746BDD6A01 /* Pods_CS4261Assignment1.framework */; };
 		DBC9EBCA2DD1EB34E690484E /* Pods_CS4261Assignment1Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B7C27E5FE0036D915BE0460 /* Pods_CS4261Assignment1Tests.framework */; };
+		E533CB43231EB663001D53F7 /* FirstViewControlloerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E533CB42231EB663001D53F7 /* FirstViewControlloerViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +63,7 @@
 		4B55F92ADCA7D4BC6A4F1F30 /* Pods-CS4261Assignment1Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CS4261Assignment1Tests.release.xcconfig"; path = "Target Support Files/Pods-CS4261Assignment1Tests/Pods-CS4261Assignment1Tests.release.xcconfig"; sourceTree = "<group>"; };
 		7F762BA6B65299D2F007E599 /* Pods-CS4261Assignment1UITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CS4261Assignment1UITests.release.xcconfig"; path = "Target Support Files/Pods-CS4261Assignment1UITests/Pods-CS4261Assignment1UITests.release.xcconfig"; sourceTree = "<group>"; };
 		A4320D591380F3239665FE7A /* Pods-CS4261Assignment1.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CS4261Assignment1.debug.xcconfig"; path = "Target Support Files/Pods-CS4261Assignment1/Pods-CS4261Assignment1.debug.xcconfig"; sourceTree = "<group>"; };
+		E533CB42231EB663001D53F7 /* FirstViewControlloerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewControlloerViewController.swift; sourceTree = "<group>"; };
 		F404B1A68E685FEC9E458D57 /* Pods-CS4261Assignment1UITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CS4261Assignment1UITests.debug.xcconfig"; path = "Target Support Files/Pods-CS4261Assignment1UITests/Pods-CS4261Assignment1UITests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -121,6 +123,7 @@
 				3D28DDA4231DF5060075D558 /* AppDelegate.swift */,
 				3D28DDA6231DF5060075D558 /* ViewController.swift */,
 				3D28DDA8231DF5060075D558 /* Main.storyboard */,
+				E533CB42231EB663001D53F7 /* FirstViewControlloerViewController.swift */,
 				3D28DDAB231DF5070075D558 /* Assets.xcassets */,
 				3D28DDAD231DF5070075D558 /* LaunchScreen.storyboard */,
 				3D28DDB0231DF5070075D558 /* Info.plist */,
@@ -167,7 +170,6 @@
 				F404B1A68E685FEC9E458D57 /* Pods-CS4261Assignment1UITests.debug.xcconfig */,
 				7F762BA6B65299D2F007E599 /* Pods-CS4261Assignment1UITests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -395,6 +397,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E533CB43231EB663001D53F7 /* FirstViewControlloerViewController.swift in Sources */,
 				3D28DDA7231DF5060075D558 /* ViewController.swift in Sources */,
 				3D28DDA5231DF5060075D558 /* AppDelegate.swift in Sources */,
 			);
