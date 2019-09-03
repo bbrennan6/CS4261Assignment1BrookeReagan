@@ -17,4 +17,8 @@ target 'CS4261Assignment1' do
     # Pods for testing
   end
 
+
+  pod 'Firebase/Core'
+  pod 'Firebase/Database'
+
 end
