@@ -10,14 +10,33 @@
 
 import UIKit
 
+
+//From Firebase Website
+//import UIKit
+//import Firebase
+
+
+
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
+   
+    let url = URL(string: "https://cs4261-assignment1-c6158.firebaseio.com/")!
+    
+    let task = URLSession.shared.dataTask(with: url) {(data, response, error) in
+        guard let data = data else { return }
+        print(String(data: data, encoding: .utf8)!)
+    }
+    
+    task.resume()
+    
+    
     var window: UIWindow?
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+ //       FirebaseApp.configure() //added with firebase
         return true
     }
 
@@ -42,7 +61,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func applicationWillTerminate(_ application: UIApplication) {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
+    
 
-
+   
+    
 }
 
