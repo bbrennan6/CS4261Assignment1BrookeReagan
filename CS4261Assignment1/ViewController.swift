@@ -10,13 +10,13 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    @IBAction func showFirstViewController(_ sender: Any) {
-        performSegue(withIdentifier: "SegueToFirstVC", sender: self)
-    }
+    //@IBAction func showFirstViewController(_ sender: Any) {
+     //   performSegue(withIdentifier: "SegueToFirstVC", sender: self)
+    //}
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        navigationItem.title = "Root View"
+      //  navigationItem.title = "Root View"
     }//end override
     
    //Code Linked to the First Button

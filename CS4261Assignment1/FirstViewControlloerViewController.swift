@@ -10,10 +10,19 @@ import UIKit
 
 class FirstViewControlloerViewController: UIViewController {
 
-    override func viewDidLoad() {
+    @IBAction func Gotonextpage(_ sender: Any) {
+        performSegue(withIdentifier: "SegueToFirstVC", sender: self)
+    }
+    // @IBAction func LoginButton(_ sender: Any) {
+   // }
+   override func viewDidLoad() {
         super.viewDidLoad()
+    //    navigationItem.title = "Root View"
 
         // Do any additional setup after loading the view.
+   // }
+  //  @IBAction func showFirstViewController(_ sender: Any) {
+        //performSegue(withIdentifier: "SegueToFirstVC", sender: self)
     }
     
 
