@@ -36,6 +36,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         FirebaseApp.configure() //added with firebase
+        
+        //added for firebase
+        var ref: DatabaseReference!
+        
+        ref = Database.database().reference()
+        self.ref.child("users").child(user.uid).setValue(["username": username])
+        
+        
+        
+        
         return true
     }
 
