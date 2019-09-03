@@ -26,7 +26,9 @@ class ViewController: UIViewController {
     
     //Code Linked to the Second Button
     @IBAction func showMessage2(sender: UIButton) {
-        let alertController = UIAlertController(title: "You Clicked Button 2 Congrats", message: "From: Reagan & Brooke", preferredStyle: UIAlertController.Style.alert)
+        let number = Int.random(in: 0 ... 100)
+        let numString = String(number)
+        let alertController = UIAlertController(title: "Your random number is: " + numString, message: "From: Reagan & Brooke", preferredStyle: UIAlertController.Style.alert)
         alertController.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: nil))
         present(alertController, animated: true, completion: nil)
     }//end second button
