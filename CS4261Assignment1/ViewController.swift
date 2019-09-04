@@ -7,21 +7,35 @@
 //
 
 import UIKit
+//import FirebaseDatabase
+//import Firebase
 
 class ViewController: UIViewController {
-
+    //var ref: FIRDatabaseReference?
+   // var refArtists: DatabaseReference!
     //@IBAction func showFirstViewController(_ sender: Any) {
      //   performSegue(withIdentifier: "SegueToFirstVC", sender: self)
     //}
     override func viewDidLoad() {
         super.viewDidLoad()
+       // FirebaseApp.configure()
+        //refArtists = Database.database().reference().child("artists")
+       // ref = FIRDatabase.database().reference()
         // Do any additional setup after loading the view, typically from a nib.
       //  navigationItem.title = "Root View"
     }//end override
     
+    //func addArtist(){
+        //let key = refArtists.childByAutoId().key
+        //let artist = ["id":key]
+        //refArtists.child("users").setValue("Hello Firebase")
+    //}
+    
    //Code Linked to the First Button
     @IBAction func showMessage(sender: UIButton) {
         let alertController = UIAlertController(title: "Welcome to Our First App! Click on the Second Button to Continue", message: "From: Reagan & Brooke", preferredStyle: UIAlertController.Style.alert)
+        //ref?.child("Users").childByAutoId().setValue("Hello Firebase")
+        //addArtist()
         alertController.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: nil))
         present(alertController, animated: true, completion: nil)
         

@@ -38,10 +38,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         FirebaseApp.configure() //added with firebase
         
         //added for firebase
-        var ref: DatabaseReference!
+        //var ref: DatabaseReference!
         
-        ref = Database.database().reference()
-        self.ref.child("users").child(user.uid).setValue(["username": username])
+        //ref = Database.database().reference()
+       // self.ref.child("users").child(user.uid).setValue(["username": username])
         
         
         
