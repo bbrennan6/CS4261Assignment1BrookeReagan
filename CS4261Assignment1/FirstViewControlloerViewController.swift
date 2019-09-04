@@ -7,16 +7,16 @@
 //
 
 import UIKit
-//import FirebaseDatabase
+import FirebaseDatabase
 
 class FirstViewControlloerViewController: UIViewController {
 
-   // var ref: DatabaseReference!
+    var ref: DatabaseReference!
     
     
     
     @IBAction func Gotonextpage(_ sender: Any) {
-       // ref.child("Users").childByAutoId().setValue("Hello Firebase")
+        ref.child("Users").childByAutoId().setValue("Hello Firebase")
         
         performSegue(withIdentifier: "SegueToFirstVC", sender: self)
     }
@@ -24,7 +24,7 @@ class FirstViewControlloerViewController: UIViewController {
    // }
    override func viewDidLoad() {
         super.viewDidLoad()
-    //ref = Database.database().reference()
+    ref = Database.database().reference()
     
     //    navigationItem.title = "Root View"
 
